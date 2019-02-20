@@ -14,9 +14,8 @@ namespace DB
         OleDbCommand cmd;
         private void Connect()
         {
-            conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\bchen7\Desktop\HairCut.mdb");
+            conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0; Data Source = E:\StudySpace\HairCut\DataBase\HairCut.mdb");
             cmd = conn.CreateCommand();
-            conn.Open();
         }
 
         private void Close()
@@ -25,13 +24,38 @@ namespace DB
             conn.Close();
         }
 
-        public DataTable GetAccount(string sql = "Select * FROM Account")
+        public bool Save(DataTable dt, string selectCommond)
+        {
+            try
+            {
+                Connect();
+                OleDbDataAdapter adapter = new OleDbDataAdapter(new OleDbCommand(selectCommond, conn));
+                OleDbCommandBuilder cb = new OleDbCommandBuilder(adapter);
+                conn.Open();
+                //DataTable temp = new DataTable();
+                //adapter.Fill(temp);
+
+                //temp = dt;
+                //temp.AcceptChanges();
+                dt.AcceptChanges();
+                cb.GetUpdateCommand();
+                adapter.Update(dt);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return true;
+        }
+
+        public DataTable Get(string sql = "Select * FROM Account")
         {
             DataTable dt = new DataTable();
             try
             {
                 Connect();
                 cmd.CommandText = sql;
+                conn.Open();
                 OleDbDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {

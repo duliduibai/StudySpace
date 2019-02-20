@@ -83,6 +83,8 @@ namespace DAL
         /// 现金合计
         /// </summary>
         public decimal CashTotal { get; set; }
-        public int MyProperty { get; set; }
+        public bool IsVIP { get; set; }
+        public string VIPNo { get; set; }
+        public decimal VIPBalance { get; set; }
     }
 }

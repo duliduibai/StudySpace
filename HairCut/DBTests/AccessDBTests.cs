@@ -19,7 +19,7 @@ namespace DB.Tests
             try
             {
                 AccessDB accessDB = new AccessDB();
-                dt = accessDB.GetAccount();
+                dt = accessDB.Get();
             }
             catch (Exception ex)
             {

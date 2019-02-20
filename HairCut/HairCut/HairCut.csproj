@@ -48,10 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HairCutDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HairCutDataSet.xsd</DependentUpon>
+    <Compile Include="CommonControls\controlOperate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\controlOperate.Designer.cs">
+      <DependentUpon>controlOperate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditBill.Designer.cs">
+      <DependentUpon>frmEditBill.cs</DependentUpon>
     </Compile>
     <Compile Include="HairCutDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -96,6 +103,12 @@
     <Compile Include="SubForms\controlCashInList.Designer.cs">
       <DependentUpon>controlCashInList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CommonControls\controlOperate.resx">
+      <DependentUpon>controlOperate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditBill.resx">
+      <DependentUpon>frmEditBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,17 +130,6 @@
     <EmbeddedResource Include="SubForms\controlVIPMng.resx">
       <DependentUpon>controlVIPMng.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="HairCutDataSet.xsc">
-      <DependentUpon>HairCutDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="HairCutDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>HairCutDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="HairCutDataSet.xss">
-      <DependentUpon>HairCutDataSet.xsd</DependentUpon>
-    </None>
     <None Include="HairCutDataSet1.xsc">
       <DependentUpon>HairCutDataSet1.xsd</DependentUpon>
     </None>

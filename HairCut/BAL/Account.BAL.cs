@@ -12,6 +12,23 @@ namespace BAL
 {
     public class AccountBAL : IAccountBAL
     {
+        public Account GetAccountByNo(string accountNo)
+        {
+            AccessDB accessDB = new AccessDB();
+            DataTable dt = accessDB.Get(String.Format("SELECT * FROM Account WHERE AccountNo = '{0}'", accountNo));
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                return Util<Account>.TransDataRowToAccount(dt.Rows[0]);
+            }
+            return null;
+        }
+        public DataTable TableGetAccountByNo(string accountNo)
+        {
+            AccessDB accessDB = new AccessDB();
+            DataTable dt = accessDB.Get(String.Format("SELECT * FROM Account WHERE AccountNo = '{0}'", accountNo));
+            return dt;
+        }
+
         public List<Account> GetAllAccounts()
         {
             return new List<Account>()
@@ -27,7 +44,7 @@ namespace BAL
         public DataTable GetAllAccountsEx()
         {
             AccessDB accessDB = new AccessDB();
-            return accessDB.GetAccount();
+            return accessDB.Get();
         }
 
         public void GetSingleAccout(string accountNo)
@@ -39,5 +56,17 @@ namespace BAL
         {
             throw new NotImplementedException();
         }
+
+        public bool Save(DataTable dt)
+        {
+            AccessDB accessDB = new AccessDB();
+            string selectCommond = @"SELECT AccountNo, CreateTime, DesignerName, DesignerNo, AssistDesignName
+                                , AssistDesignNo, TechnicianName, TechnicianNo, WashBlow, Perm, WashCutBlow, Dye
+                                , InhaleCutBlow, Straight, ChildCut, TransHair, Style, HairCare, Other, PayWay
+                                , CashTotal, IsVIP, VIPNo, VIPBalance
+                                FROM Account";
+            return accessDB.Save(dt, selectCommond);
+        }
     }
 }
+

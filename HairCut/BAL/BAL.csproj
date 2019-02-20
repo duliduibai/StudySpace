@@ -44,6 +44,7 @@
     <Compile Include="Account.BAL.cs" />
     <Compile Include="Interface\IAccount.BAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

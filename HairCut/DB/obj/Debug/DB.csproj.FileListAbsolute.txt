@@ -18,3 +18,13 @@ D:\我的文档\github\StudySpace\HairCut\DB\obj\Debug\DB.csproj.CoreCompileInpu
 D:\我的文档\github\StudySpace\HairCut\DB\obj\Debug\DB.csproj.CopyComplete
 D:\我的文档\github\StudySpace\HairCut\DB\obj\Debug\DB.dll
 D:\我的文档\github\StudySpace\HairCut\DB\obj\Debug\DB.pdb
+E:\StudySpace\HairCut\DB\bin\Debug\DB.dll
+E:\StudySpace\HairCut\DB\bin\Debug\DB.pdb
+E:\StudySpace\HairCut\DB\bin\Debug\nunit.framework.dll
+E:\StudySpace\HairCut\DB\bin\Debug\nunit.framework.pdb
+E:\StudySpace\HairCut\DB\bin\Debug\nunit.framework.xml
+E:\StudySpace\HairCut\DB\obj\Debug\DB.csproj.CoreCompileInputs.cache
+E:\StudySpace\HairCut\DB\obj\Debug\DB.csproj.CopyComplete
+E:\StudySpace\HairCut\DB\obj\Debug\DB.dll
+E:\StudySpace\HairCut\DB\obj\Debug\DB.pdb
+E:\StudySpace\HairCut\DB\obj\Debug\DB.csprojAssemblyReference.cache

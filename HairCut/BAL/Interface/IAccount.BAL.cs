@@ -14,5 +14,8 @@ namespace BAL.Interface
         DataTable GetAllAccountsEx();
         void GetSingleAccout(string accountNo);
         void SaveAccount(Account account);
+        Account GetAccountByNo(string accountNo);
+        DataTable TableGetAccountByNo(string accountNo);
+        bool Save(DataTable dt);
     }
 }

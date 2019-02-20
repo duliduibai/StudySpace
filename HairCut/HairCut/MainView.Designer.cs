@@ -53,14 +53,14 @@
             this.DesignerMng});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(605, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(634, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // Bill
             // 
             this.Bill.Name = "Bill";
-            this.Bill.Size = new System.Drawing.Size(45, 20);
+            this.Bill.Size = new System.Drawing.Size(44, 21);
             this.Bill.Text = "收银";
             this.Bill.Click += new System.EventHandler(this.Bill_Click);
             // 
@@ -71,20 +71,20 @@
             this.打开ToolStripMenuItem,
             this.删除ToolStripMenuItem1});
             this.CashIn.Name = "CashIn";
-            this.CashIn.Size = new System.Drawing.Size(71, 20);
+            this.CashIn.Size = new System.Drawing.Size(68, 21);
             this.CashIn.Text = "收银列表";
             this.CashIn.Click += new System.EventHandler(this.CashInList_Click);
             // 
             // 打开ToolStripMenuItem
             // 
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
-            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.打开ToolStripMenuItem.Text = "打开";
             // 
             // 删除ToolStripMenuItem1
             // 
             this.删除ToolStripMenuItem1.Name = "删除ToolStripMenuItem1";
-            this.删除ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.删除ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
             this.删除ToolStripMenuItem1.Text = "删除";
             // 
             // VIPMng
@@ -94,7 +94,7 @@
             this.修改ToolStripMenuItem,
             this.删除ToolStripMenuItem});
             this.VIPMng.Name = "VIPMng";
-            this.VIPMng.Size = new System.Drawing.Size(71, 20);
+            this.VIPMng.Size = new System.Drawing.Size(68, 21);
             this.VIPMng.Text = "会员管理";
             this.VIPMng.Click += new System.EventHandler(this.VIPMng_Click);
             // 
@@ -119,34 +119,35 @@
             // RptView
             // 
             this.RptView.Name = "RptView";
-            this.RptView.Size = new System.Drawing.Size(45, 20);
+            this.RptView.Size = new System.Drawing.Size(44, 21);
             this.RptView.Text = "报表";
             this.RptView.Click += new System.EventHandler(this.RptView_Click);
             // 
             // DesignerMng
             // 
             this.DesignerMng.Name = "DesignerMng";
-            this.DesignerMng.Size = new System.Drawing.Size(84, 20);
+            this.DesignerMng.Size = new System.Drawing.Size(80, 21);
             this.DesignerMng.Text = "设计师管理";
             this.DesignerMng.Click += new System.EventHandler(this.DesignerMng_Click);
             // 
             // panelContainer
             // 
+            this.panelContainer.AutoScroll = true;
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(0, 24);
+            this.panelContainer.Location = new System.Drawing.Point(0, 25);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(605, 537);
+            this.panelContainer.Size = new System.Drawing.Size(634, 737);
             this.panelContainer.TabIndex = 1;
             // 
             // MainView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 561);
+            this.ClientSize = new System.Drawing.Size(634, 762);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(500, 600);
+            this.MinimumSize = new System.Drawing.Size(650, 800);
             this.Name = "MainView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Love Her 细剪";

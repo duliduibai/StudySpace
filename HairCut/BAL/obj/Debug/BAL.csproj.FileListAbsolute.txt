@@ -20,3 +20,14 @@ D:\我的文档\github\StudySpace\HairCut\BAL\obj\Debug\BAL.csproj.CoreCompileIn
 D:\我的文档\github\StudySpace\HairCut\BAL\obj\Debug\BAL.csproj.CopyComplete
 D:\我的文档\github\StudySpace\HairCut\BAL\obj\Debug\BAL.dll
 D:\我的文档\github\StudySpace\HairCut\BAL\obj\Debug\BAL.pdb
+E:\StudySpace\HairCut\BAL\bin\Debug\BAL.dll
+E:\StudySpace\HairCut\BAL\bin\Debug\BAL.pdb
+E:\StudySpace\HairCut\BAL\bin\Debug\DAL.dll
+E:\StudySpace\HairCut\BAL\bin\Debug\DB.dll
+E:\StudySpace\HairCut\BAL\bin\Debug\DAL.pdb
+E:\StudySpace\HairCut\BAL\bin\Debug\DB.pdb
+E:\StudySpace\HairCut\BAL\obj\Debug\BAL.csprojAssemblyReference.cache
+E:\StudySpace\HairCut\BAL\obj\Debug\BAL.csproj.CoreCompileInputs.cache
+E:\StudySpace\HairCut\BAL\obj\Debug\BAL.csproj.CopyComplete
+E:\StudySpace\HairCut\BAL\obj\Debug\BAL.dll
+E:\StudySpace\HairCut\BAL\obj\Debug\BAL.pdb
