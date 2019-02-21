@@ -7,25 +7,45 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using DB;
+using System.Data.OleDb;
 
 namespace BAL
 {
     public class AccountBAL : IAccountBAL
     {
+        const String SQL_SELECT = @"SELECT AccountNo, CreateTime, DesignerName, DesignerNo, AssistDesignName
+                                , AssistDesignNo, TechnicianName, TechnicianNo, WashBlow, Perm, WashCutBlow, Dye
+                                , InhaleCutBlow, Straight, ChildCut, TransHair, Style, HairCare, Other, PayWay
+                                , CashTotal, IsVIP, VIPNo, VIPBalance
+                                FROM Account";
+        const String SQL_SELECT_EX = @"SELECT AccountNo, CreateTime, DesignerName, DesignerNo, AssistDesignName
+                                , AssistDesignNo, TechnicianName, TechnicianNo, WashBlow, Perm, WashCutBlow, Dye
+                                , InhaleCutBlow, Straight, ChildCut, TransHair, Style, HairCare, Other, PayWay
+                                , CashTotal, IsVIP, VIPNo, VIPBalance
+                                FROM Account WHERE AccountNo = @AccountNo";
         public Account GetAccountByNo(string accountNo)
         {
             AccessDB accessDB = new AccessDB();
-            DataTable dt = accessDB.Get(String.Format("SELECT * FROM Account WHERE AccountNo = '{0}'", accountNo));
+            OleDbParameter oleDbParameter = new OleDbParameter();
+            DataTable dt = accessDB.Get(SQL_SELECT_EX, GenerateParameters(accountNo));
             if (dt != null && dt.Rows.Count > 0)
             {
                 return Util<Account>.TransDataRowToAccount(dt.Rows[0]);
             }
             return null;
         }
+
+        private OleDbParameter[] GenerateParameters(string accountNo)
+        {
+            return new OleDbParameter[]
+            {
+                new OleDbParameter("@AccountNo", accountNo)
+            };
+        }
         public DataTable TableGetAccountByNo(string accountNo)
         {
             AccessDB accessDB = new AccessDB();
-            DataTable dt = accessDB.Get(String.Format("SELECT * FROM Account WHERE AccountNo = '{0}'", accountNo));
+            DataTable dt = accessDB.Get(SQL_SELECT_EX, GenerateParameters(accountNo));
             return dt;
         }
 
@@ -44,7 +64,7 @@ namespace BAL
         public DataTable GetAllAccountsEx()
         {
             AccessDB accessDB = new AccessDB();
-            return accessDB.Get();
+            return accessDB.Get(SQL_SELECT, null);
         }
 
         public void GetSingleAccout(string accountNo)
@@ -60,12 +80,7 @@ namespace BAL
         public bool Save(DataTable dt)
         {
             AccessDB accessDB = new AccessDB();
-            string selectCommond = @"SELECT AccountNo, CreateTime, DesignerName, DesignerNo, AssistDesignName
-                                , AssistDesignNo, TechnicianName, TechnicianNo, WashBlow, Perm, WashCutBlow, Dye
-                                , InhaleCutBlow, Straight, ChildCut, TransHair, Style, HairCare, Other, PayWay
-                                , CashTotal, IsVIP, VIPNo, VIPBalance
-                                FROM Account";
-            return accessDB.Save(dt, selectCommond);
+            return accessDB.Save(dt, SQL_SELECT);
         }
     }
 }

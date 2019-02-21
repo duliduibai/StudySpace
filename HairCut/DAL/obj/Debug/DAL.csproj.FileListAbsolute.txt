@@ -13,3 +13,4 @@ E:\StudySpace\HairCut\DAL\bin\Debug\DAL.pdb
 E:\StudySpace\HairCut\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 E:\StudySpace\HairCut\DAL\obj\Debug\DAL.dll
 E:\StudySpace\HairCut\DAL\obj\Debug\DAL.pdb
+D:\我的文档\github\StudySpace\HairCut\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

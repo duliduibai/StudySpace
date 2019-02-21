@@ -29,9 +29,10 @@ namespace HairCut
 
         private void Init()
         {
-            account = accountBAL.GetAccountByNo(accountNo);
+            //account = accountBAL.GetAccountByNo(accountNo);
             //ctlBill = new controlBill(account);
-            ctlBill = new controlBill(accountBAL.TableGetAccountByNo(accountNo));
+            DataTable dt = accountBAL.TableGetAccountByNo(accountNo);
+            ctlBill = new controlBill(dt);
             ctlBill.Dock = DockStyle.Fill;
             panel1.Controls.Add(ctlBill);
         }

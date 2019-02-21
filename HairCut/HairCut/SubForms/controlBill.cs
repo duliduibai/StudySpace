@@ -34,20 +34,15 @@ namespace HairCut.SubForms
         {
             InitializeComponent();
             accountSource = account;
-            Init();
+            accountBindingSource.DataSource = account;
         }
         public controlBill(DataTable tblAccount)
         {
             InitializeComponent();
             this.tblAccount = tblAccount;
-            Init();
-        }
-
-
-        private void Init()
-        {
             accountBindingSource.DataSource = tblAccount;
         }
+
 
         private void controlBill_SizeChanged(object sender, EventArgs e)
         {
@@ -63,6 +58,8 @@ namespace HairCut.SubForms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            ///就是因为这个EndEdit(),让我卡在"不能保存修改"这个地方半个下午.
+            accountBindingSource.EndEdit();
             Save();
         }
 

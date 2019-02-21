@@ -36,13 +36,13 @@
             this.accountTableAdapter = new HairCut.HairCutDataSet1TableAdapters.AccountTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.designerNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assistDesignNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assistDesignNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.technicianNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.technicianNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.permDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.washCutBlowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dyeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,13 +80,13 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn3,
             this.designerNoDataGridViewTextBoxColumn,
             this.assistDesignNameDataGridViewTextBoxColumn,
             this.assistDesignNoDataGridViewTextBoxColumn,
             this.technicianNameDataGridViewTextBoxColumn,
             this.technicianNoDataGridViewTextBoxColumn,
-            this.dataGridViewTextBoxColumn4,
             this.permDataGridViewTextBoxColumn,
             this.washCutBlowDataGridViewTextBoxColumn,
             this.dyeDataGridViewTextBoxColumn,
@@ -107,7 +107,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(763, 475);
+            this.dataGridView1.Size = new System.Drawing.Size(763, 515);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
@@ -140,6 +140,13 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "CreateTime";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "WashBlow";
+            this.dataGridViewTextBoxColumn4.HeaderText = "WashBlow";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -182,13 +189,6 @@
             this.technicianNoDataGridViewTextBoxColumn.HeaderText = "TechnicianNo";
             this.technicianNoDataGridViewTextBoxColumn.Name = "technicianNoDataGridViewTextBoxColumn";
             this.technicianNoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "WashBlow";
-            this.dataGridViewTextBoxColumn4.HeaderText = "WashBlow";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // permDataGridViewTextBoxColumn
             // 
@@ -297,11 +297,11 @@
             // 
             // controlCashInList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Name = "controlCashInList";
-            this.Size = new System.Drawing.Size(763, 475);
+            this.Size = new System.Drawing.Size(763, 515);
             this.Load += new System.EventHandler(this.controlCashIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accountBindingSource)).EndInit();
@@ -322,13 +322,13 @@
         private HairCutDataSet1TableAdapters.AccountTableAdapter accountTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn designerNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn assistDesignNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn assistDesignNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn technicianNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn technicianNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn permDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn washCutBlowDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dyeDataGridViewTextBoxColumn;
