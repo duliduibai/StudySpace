@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "策略模式", "策略模�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式", "观察者模式\观察者模式.csproj", "{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "装饰者模式", "装饰者模式\装饰者模式.csproj", "{EC3E2BF1-6005-46A3-92DB-914B440029ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "抽象类Test", "抽象类Test\抽象类Test.csproj", "{0A4F2AD5-24CD-4E07-AA07-C53EFE7567B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3E2BF1-6005-46A3-92DB-914B440029ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3E2BF1-6005-46A3-92DB-914B440029ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3E2BF1-6005-46A3-92DB-914B440029ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3E2BF1-6005-46A3-92DB-914B440029ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4F2AD5-24CD-4E07-AA07-C53EFE7567B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4F2AD5-24CD-4E07-AA07-C53EFE7567B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4F2AD5-24CD-4E07-AA07-C53EFE7567B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4F2AD5-24CD-4E07-AA07-C53EFE7567B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
