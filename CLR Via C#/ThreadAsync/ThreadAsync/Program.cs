@@ -17,14 +17,18 @@ namespace ThreadAsync
                 //TestLock();
                 //TestMonitor();
                 //TestInterlocked();
+                //TestMonitor();
             }
 
             AutoResetEventTest autoResetEventTest = new AutoResetEventTest();
             //autoResetEventTest.WriteEvenOddByTwoThreads();
             //autoResetEventTest.WriteEvenOddWithMultyTreads();
             //autoResetEventTest.WriteEvenOddWithMultyTasks();
-            autoResetEventTest.WriteEvenOddWithSemaphore();
-            //TestMonitor();
+            //autoResetEventTest.WriteEvenOddWithSemaphore();
+
+            ParallelTest parallelTest = new ParallelTest();
+            parallelTest.Test();
+            parallelTest.TestInterlocked();
             Console.ReadLine();
         }
 

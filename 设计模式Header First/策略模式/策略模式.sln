@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "策略模式", "策略模式\策略模式.csproj", "{74FA6A4E-6199-490B-B44D-9C6C06D89BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式", "观察者模式\观察者模式.csproj", "{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74FA6A4E-6199-490B-B44D-9C6C06D89BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FA6A4E-6199-490B-B44D-9C6C06D89BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FA6A4E-6199-490B-B44D-9C6C06D89BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FA6A4E-6199-490B-B44D-9C6C06D89BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {227F8E23-30B8-4549-82D9-3E1C1657D67D}
+	EndGlobalSection
+EndGlobal

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B442CC3-5287-4F86-B190-599C196F21F5}</ProjectGuid>
+    <ProjectGuid>{7F7A7240-66ED-46B6-B1F0-0B466C534CF7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ThreadAsync</RootNamespace>
-    <AssemblyName>ThreadAsync</AssemblyName>
+    <RootNamespace>观察者模式</RootNamespace>
+    <AssemblyName>观察者模式</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
-    <Compile Include="AutoResetEventTest.cs" />
-    <Compile Include="ParallelTest.cs" />
-    <Compile Include="TreadAsyncTest.cs" />
+    <Compile Include="IObserver.cs" />
+    <Compile Include="NewspaperOffice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RailwayStation.cs" />
+    <Compile Include="School.cs" />
+    <Compile Include="Someone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
